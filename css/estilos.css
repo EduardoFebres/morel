@@ -1,0 +1,442 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+:root {
+
+  --color-1: #2a3425;
+  --color-2: #d4695c;
+  --color-3: #86a27b;
+  --background: #F9F9F9
+
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--color-1);
+  font-family: 'Kanit', "Lucida Console", Monaco, monospace;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+h1 {
+    font-size: 1.688rem;
+    font-weight: 500;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0.375rem;
+    border-bottom: 0.375rem;
+    border-style: solid;
+    display: inline;
+    padding: 0px 0.750rem;
+    letter-spacing: -0.063rem;
+    text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/*nav bar*/
+
+.navBar {
+  background-color: var(--background);
+  position: fixed;
+  min-width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.logo {
+  background-color: transparent;
+  border-radius: 50px;
+  display: inline-block;
+  height: 1.5rem;
+  margin: 1em 0;
+}
+
+.logo img {
+  max-width: 6.250rem;
+  height: auto;
+  margin-right: 2
+}
+
+
+  .navBar li:first child {
+    margin-right: auto
+  }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1227px;
+  padding: 0 2%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 50%;
+}
+nav ul a {
+  color: var(--color-1);
+  text-decoration: none;
+  transition: all .5s ease;
+  display: block;
+}
+nav ul a:hover {
+  color: var(--color-2);
+}
+
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+nav div a {
+  color: #E84545;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+nav div a:hover {
+  color: #903749;
+}
+
+nav li {
+  display: inline-block;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+nav .menu-item {
+  flex: 1 1 100%;
+}
+
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*header*/
+
+.logo-container {
+  max-width: 50%
+}
+
+/*content*/
+.main-container {
+  max-width: 1227px;margin: auto;padding: 1%
+}
+
+/*Snippets*/
+.sombra {
+  box-shadow: 2px 2px 5px 0px;
+}
+
+.responsive {
+  width:100%;height:auto;
+}
+
+/*overlay classes*/
+
+.container {
+  position: relative;
+ }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*Grids*/
+.column {
+  flex-grow:0;
+  flex-basis:calc(25% - 2rem);
+  line-height: 0;
+  padding: 1rem;
+}
+
+
+/* Obra día */
+.ficha-metadata {
+  font-family: 'Exo', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.950rem;
+  padding: 2.500rem 6% 4.500rem 15.1%;
+  line-height: 1.5em;
+}
+
+.metadata-input {
+  font-size: 0.938;
+  font-weight: 600;
+  
+}
+
+.actions-h {
+  margin:auto;display:flex;justify-content: center;
+}
+
+.actions-h, .actions-v i {
+  font-size:1.875rem;
+}
+
+.actions-h i {
+  padding: 0.75em;
+}
+
+.actions-v {
+  flex-grow:0;flex-basis:8%;align-self: center;text-align: center
+}
+
+.portada {
+flex:0 0 auto;
+align-self: center;
+line-height: 0;
+}
+
+/*obras*/
+.row {
+  display: flex;flex-direction: row;flex-wrap:wrap;align-items: stretch;margin:.688rem -1rem 3.125rem -1rem
+}
+
+
+/*xs styling*/
+
+.portada {
+  max-width: 68.8%;  
+  margin: auto;
+  flex-basis:100%;
+}
+
+.ficha-title {
+  flex: 0 0 auto;flex-basis:100%;
+  padding: 15.1% 6% 2.250rem 15.1%;
+}
+
+.ficha-container > div
+{padding-right: 15.1%;}
+
+.ficha-extract {
+  padding-left:  15.1%;
+}
+
+
+.obra-dia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: baseline;
+  margin-bottom: 50px;
+  margin-top:27px;
+  background-color: var(--background);
+  
+}
+
+.header {
+  display: flex;justify-content: center;height: 50vh;align-items:center;
+}
+
+/*HEADER MEDIA QUERIES*/
+
+/*Desde s hasta xl*/
+@media screen and (min-width: 600px) {
+  .header {
+    height: 100vh;
+  }
+}
+
+/*OBRAS MEDIA QUERIES*/
+
+/*xs, s y m*/
+@media screen and (max-width: 797px) {
+  .actions-h {
+    padding-bottom: calc(15.1% - 0.5em);
+  }
+}
+
+/*xs, s, m y ml*/
+
+@media screen and (max-width: 1039px){
+
+  .actions-h {
+    display: block;
+  }
+
+  .actions-v {
+    display: none;
+    flex-basis: 0%;
+    max-width: 0%;
+  } 
+
+}
+
+/*ml, l y xl*/
+@media screen and (min-width: 798px){
+  
+  .ficha-title {
+    padding: 5.750rem 6% 2.250rem 15.1% !important;
+
+   }
+  .ficha-extract {
+padding: 0px 6% 0 15.1% !important;
+  }
+
+  .portada {
+    padding-left: 0;
+  }
+
+  .ficha-metadata {
+    padding: 2.500rem 6% 4.813rem 15.1% !important;
+  }
+}
+
+/*solo m*/
+@media screen and (min-width: 601px) and (max-width: 797px) {
+  .portada {
+    max-width: 50%;
+  }
+  .header{
+    height: 70vh;
+  }
+
+}
+/*Solo l*/
+
+@media screen and (min-width: 798px) and (max-width: 1039px) {
+  
+  .portada {
+    flex-basis: 45%;
+    max-width: 45%;
+    padding-top: 0rem;
+
+  }
+
+  .ficha-container {
+    flex-basis: 55%;
+    max-width: 55%;
+  }
+  
+  .portada {
+    justify-content: 
+  }
+
+  .img-frame {
+    padding-right: 10%;
+  }
+}
+
+/*solo xl*/
+
+@media screen and (min-width: 1040px ){
+
+  .actions-h {
+    display: none !important;
+    }
+  .actions-v {
+    display: block !important;
+  }
+  .portada {
+    flex-basis:39%;
+    max-width: 39%;
+    padding-top: 0;
+}
+
+  .ficha-container {
+    flex-basis:53%;
+    max-width: 53%;
+  }
+
+
+}
+
+
+
+/*Nav Bar media queries*/
+@media screen and (max-width: 600px) {
+  nav nav ul a {
+    color: #53354A;
+  }
+  nav ul {
+    background-color: #E84545;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 2px solid #53354A;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 1em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-1) 20%, transparent 20%, transparent 40%, var(--color-1) 40%, var(--color-1) 60%, transparent 60%, transparent 80%, var(--color-1) 80%, var(--color-1) 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 23px;
+    margin-top: 1em;
+    width: 23px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+
+  
+}
+
+
+

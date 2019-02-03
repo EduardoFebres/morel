@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pure CSS Responsive Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500,700|Kanit:400,500,600,700" rel="stylesheet"> 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  <style type="text/css" media="screen">
+      #particles-js{
+      width: 100%;
+      height: 100%;
+      background-color: var(--background);
+      background-image: url('');
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      position: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }    
+
+    .autor-pagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: baseline;
+  margin-bottom: 3.125em;
+  margin-top:2.5em;
+  background-color: var(--background);
+  
+}
+/*xl styling*/
+
+
+.autor-pagina .portada {
+
+max-width: 80%;
+justify-content: center;
+}
+
+.autor-pagina .responsive {
+  width: auto;
+  max-width: 100%;
+}
+
+.portada .img-frame {
+  text-align: center;
+}
+
+  </style>
+  
+</head>
+
+<body>
+<!--Nav Bar-->
+<nav class="navBar">
+  <nav class="wrapper">
+    <div class="logo">
+      <img src="img/logo.png" alt="MOREL" class="logo-img">
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle"></label>
+    <ul>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Ipsum</a></li>
+      <li><a href="#">Serum</a></li>
+    </ul>
+  </nav>
+</nav>
+<!--particles-->
+<div id="particles-js"></div>
+<!--page content-->
+<div class="main-container">
+  <!--Ficha del autor-->
+  <div class="autor-pagina sombra">
+    <div class="ficha-container">
+      <div class="ficha-title">
+        <h2>
+          Andrés Bello
+        </h2>
+      </div>
+      <div class="ficha-extract" style="">
+        <p>
+          Andrés de Jesús María y José Bello López (Caracas, 29 de noviembre de 1781-Santiago, 15 de octubre de 1865) fue un polímata venezolano, quien fue a la vez filósofo, poeta, traductor, filólogo, ensayista, educador, político y diplomático. Considerado como uno de los humanistas más importantes de América, realizó contribuciones en innumerables campos del conocimiento.En Caracas,participó en el proceso que llevó a la independencia venezolana. En Chile, deempeñó cargos de senador y profesor, además de dirigir diversos periódicos locales. Como jurista, fue el principal impulsor y redactor del Código Civil, una de las obras jurídicas americanas más novedosas e influyentes de su época.
+        </p>
+      </div>
+      <div class="ficha-metadata">
+        Nació en <span class="metadata-input">Caracas</span> el <span class="metadata-input">29 de noviembre</span> de <span class="metadata-input">1781</span>.<br>
+        Falleció enn <span class="metadata-input">Santiago de Chile</span> en <span class="metadata-input">1865</span>.
+      </div>
+    </div>
+    <div class="portada" style="">
+      <div class="img-frame">  
+      <img src="img/AndresBello.jpg" class="responsive">
+      </div>
+      <div class="actions-h">
+       
+      </div>      
+    </div>
+  </div>
+</div>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
