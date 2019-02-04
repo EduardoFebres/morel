@@ -5,32 +5,8 @@
   <meta charset="UTF-8">
   <title>Pure CSS Responsive Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500,700|Kanit:400,500,600,700" rel="stylesheet"> 
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  <style type="text/css" media="screen">
-      #particles-js{
-      width: 100%;
-      height: 100%;
-      background-color: var(--background);
-      background-image: url('');
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      position: absolute;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }    
-
-
-
-  </style>
-  
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">  
 </head>
 
 <body>
@@ -54,7 +30,7 @@
 <!--header-->
 <header class="header">
   <div class="logo-container">
-    <img class="responsive" src="img/logo-portada.png">
+    <div class="logo"></div>
   </div>
 </header>
 <!--Page Content-->
@@ -80,10 +56,11 @@
     <div class="portada" style="">
       <div class="img-frame">  
       <img src="img/libro-6.jpg" class="responsive" alt="">
+        <div class="actions-h">
+          <i class="fa fa-share-alt" style="padding: 1em"></i><i class="fa fa-download"></i><i class="fa fa-shopping-cart"></i>
+        </div>     
       </div>
-       <div class="actions-h">
-        <i class="fa fa-share-alt" style="padding: 1em"></i><i class="fa fa-download"></i><i class="fa fa-shopping-cart"></i>
-      </div>      
+         
     </div>
     <div class="actions-v">
       <i class="fa fa-share-alt"></i><br>
@@ -97,40 +74,59 @@
   <!--Obras-->
   <h1>OBRAS</h1>
   <div  class="row">
-   <div  class="column">
-    <div>  
-      <img src="img/libro-6.jpg" class="sombra responsive" alt="">
-    </div>
-   </div>
-    <div  class="column">
-      <div>
-        <img src="img/libro-6.jpg" class="sombra responsive">
-      </div>
-    </div>
-     <div  class="column">
-      <div>
-        <img src="img/libro-6.jpg" class="sombra responsive">
-      </div>
-    </div>
-    <div  class="column">
-      <div>
-        <img src="img/libro-6.jpg" class="sombra responsive">
-      </div>
-    </div>
-     <div  class="column">
-      <div>
-        <img src="img/libro-6.jpg" class="sombra responsive">
-      </div>
-    </div>
-    <!--overlay test-->
-    <div  class="column">
+    <div class="basis">
       <div class="container">
-        <img src="img/libro-6.jpg" class="sombra responsive">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image sombra">
         <div class="overlay">
-          <div class="text">Comprar</div>
+          <div class="text">Hello World</div>
         </div>
       </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
     </div>
+    
+       <div class="basis">
+      <div class="container">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image sombra">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
+    </div>
+
+       <div class="basis">
+      <div class="container">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image sombra">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
+    </div>
+
+       <div class="basis">
+      <div class="container">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image sombra">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 <script src="js/particles.js"></script>
