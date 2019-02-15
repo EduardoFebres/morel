@@ -483,7 +483,8 @@ nav .wrapper {
     margin: 3%; }
 
   .price .title {
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: 1.7rem; }
 
   .price .autor {
     margin-top: 0.7rem; }
