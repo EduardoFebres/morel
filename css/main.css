@@ -43,6 +43,9 @@ a.morel:hover {
   color: var(--color-2);
   cursor: pointer; }
 
+footer a.morel {
+  font-weight: 300; }
+
 body {
   background-color: var(--background);
   color: var(--color-1);
@@ -445,10 +448,11 @@ input[type=email] {
   border: .125em solid #ccc;
   font-size: 1.4rem;
   transition: all 1s ease;
-  width: 100%; }
+  width: 100%;
+  max-width: 400px; }
 
 input[type=email]:focus {
-  border: 0.185em solid var(--color-2); }
+  border: 0.125em solid var(--color-2); }
 
 input[type=submit] {
   font-size: 1.4rem;
@@ -477,6 +481,26 @@ input[type=submit]:hover {
 label.input {
   font-size: 1.4rem; }
 
+/*footer*/
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  align-items: center;
+  text-align: center; }
+
+.footer-col {
+  line-height: 2rem;
+  flex-basis: 100%;
+  align-self: center;
+  padding: 1rem 0px; }
+
+@media screen and (min-width: 799px) {
+  .footer-col {
+    flex-basis: 33.33%; }
+
+  .footer-row {
+    text-align: left; } }
 .autor-pagina {
   display: flex;
   flex-direction: row;
@@ -729,7 +753,7 @@ label {
   text-align: left;
   /*display: block;*/ }
 
-.modal .btn-container {
+.modal .btn-container, footer .btn-container {
   margin: 1rem 0 1rem 0; }
 
 .modal label.morel {
