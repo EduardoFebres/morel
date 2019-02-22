@@ -86,7 +86,7 @@ p:first-of-type::first-letter {
   font-size: 2rem;
   font-weight: 500; }
 
-label.button {
+label.button, button {
   font-size: 1.4rem;
   font-family: 'Kanit', "Lucida Console", Monaco, monospace;
   color: var(--color-1);
@@ -162,7 +162,6 @@ label:hover.button {
   align-self: center;
   line-height: 0; }
 
-/*obras*/
 .row {
   display: flex;
   flex-direction: row;
@@ -537,7 +536,7 @@ label.input {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 0.688rem -1rem 3.125rem -1rem; }
+  margin: 0.688rem -1rem 5rem -1rem; }
 
 .container {
   position: relative; }
@@ -591,7 +590,7 @@ label.input {
   .container:hover ~ .price {
     display: block; }
 
-  .container:hover .overlay {
+  .container:hover .overlay, .masobras .overlay {
     bottom: 0;
     height: 100%; }
 
