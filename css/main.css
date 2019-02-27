@@ -42,7 +42,12 @@ a.morel {
   font-weight: 500;
   transition: all 1s ease; }
 
-a.morel:hover {
+a.metadata-input {
+  color: var(--color-1);
+  transition: all 1s ease;
+  text-decoration: none; }
+
+a.morel:hover, a.metadata-input:hover {
   color: var(--color-2);
   cursor: pointer; }
 
@@ -107,7 +112,7 @@ label.button, button {
   cursor: pointer;
   transition: all 1s ease; }
 
-label:hover.button {
+label:hover.button, button:hover {
   font-weight: 600;
   color: var(--background);
   background: var(--color-2);
@@ -146,7 +151,7 @@ label:hover.button {
   line-height: 1.5em; }
 
 .metadata-input {
-  font-size: 0.938;
+  font-size: 0.938em;
   font-weight: 600; }
 
 .actions-h {
@@ -517,9 +522,9 @@ label.input {
 .participar {
   flex-basis: 100%; }
 
-.participar .button {
-  text-align: right; }
-
+/*.participar .button {
+    text-align: right;
+}*/
 .participar-right {
   padding-left: 15.1%;
   padding-right: 15.1%; }
