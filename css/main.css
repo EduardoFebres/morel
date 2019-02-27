@@ -39,7 +39,7 @@ html {
 
 a.morel {
   color: var(--color-1);
-  font-weight: 600;
+  font-weight: 500;
   transition: all 1s ease; }
 
 a.morel:hover {
@@ -85,7 +85,7 @@ p {
   line-height: 1.5em;
   margin-top: 1rem; }
 
-p:first-of-type::first-letter {
+p.morel:first-of-type::first-letter {
   font-size: 2rem;
   font-weight: 500; }
 
@@ -542,6 +542,20 @@ label.input {
 
   .participar .ficha-title {
     padding-right: 6%; } }
+/* branding words*/
+b.morel-word {
+  font-weight: 700;
+  font-transform: uppercase;
+  font-size: 1.25em;
+  display: inline-block; }
+
+b.morel-word::first-letter {
+  color: var(--color-2) !important;
+  font-weight: 700 !important; }
+
+b.site-word {
+  font-size: 1.25em; }
+
 .autor-pagina {
   display: flex;
   flex-direction: row;
