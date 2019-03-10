@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Pure CSS Responsive Menu</title>
+    <title>MOREL | literaturavenezolana.info [prototipo]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -14,7 +14,7 @@
     <nav class="navBar">
         <nav class="wrapper">
             <div class="logo">
-                <img src="img/logo.png" alt="MOREL" class="logo-img">
+                <a href="index.html"><img src="img/logo.png" alt="MOREL" class="logo-img"></a>
             </div>
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="label-toggle"></label>
@@ -51,7 +51,7 @@
                     </p>
                 </div>
                 <div class="ficha-metadata">
-                    Escrita por <a class="metadata-input">Alejandro de Humboldt</a> + <a class="metadata-input">Lisandro Alvarado</span> // Publicada en <a class="metadata-input">Caracas</a> por <a class="metadata-input">Biblioteca Venezolana de Cultura</a> en <a class="metadata-input">1941</a> // Recuperada por <a class="metadata-input">Biblioteca Nacional Digital</a>.
+                    Escrita por <a class="metadata-input" href="humboldt.html">Alejandro de Humboldt</a> + <a class="metadata-input" href=""><label for="autor">Lisandro Alvarado</label></a> // Publicada en <a class="metadata-input"><label for="listas">Caracas</label></a> por <a class="metadata-input"><label for="listas">Biblioteca Venezolana de Cultura</label></a> en <a class="metadata-input"><label for="listas">1941</label></a> // Recuperada por <a class="metadata-input"><label for="listas">Biblioteca Nacional Digital</label></a>.
                 </div>
             </div>
             <div class="portada" style="">
@@ -70,11 +70,12 @@
             </div>
             <div class="actions-v">
                  <a class="morel a2a_dd" href="https://www.addtoany.com/share">
-                            <i class="fa fa-share-alt" style="padding: 1em">
+                            <i class="fa fa-share-alt" style="padding: 1em 0em">
                                 <script async src="https://static.addtoany.com/menu/page.js"></script>
                             </i></a><br>
-                <a class="morel" href="descargas/Alejandro_Humbolt_viaje_a_las_regiones_equinocciales_tomo_2_morel.pdf" target="_blank" download><i class="fa fa-download"></a></i><br>
-                <i class="fa fa-shopping-cart"></i>
+                <a class="morel" href="descargas/Alejandro_Humbolt_viaje_a_las_regiones_equinocciales_tomo_2_morel.pdf" target="_blank" download>
+                    <i class="fa fa-download" style="padding: 1em 0em"></i></a><br>
+                <i class="fa fa-shopping-cart" style="padding: 1em 0em"></i>
             </div>
         </div>
         <!--Obras-->
@@ -98,7 +99,7 @@
                 <div class="container">
                     <img src="img/Teresa_de_la_parra_cartas_literatura_venezolana.jpg" alt="Cartas | Teresa de la Parra" class="image sombra">
                     <div class="overlay">
-                        <div class="text" role="button"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text" role="button"><a class="morel" href="obras/cartas.html"><button>ABRIR</button></a></div>
                     </div>
                 </div>
                 <div class="price">
@@ -111,7 +112,7 @@
                 <div class="container">
                     <img src="img/Andrés_Bello_obras_completas_tomo_3_poesias_0.jpg" alt="Obras Completas III: poesías | Andrés Bello" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><a class="morel" href="obras3-poesia.html" ><button>ABRIR</button></a></div>
                     </div>
                 </div>
                 <div class="price">
@@ -124,7 +125,7 @@
                 <div class="container">
                     <img src="img/Jose_rafael_pocaterra_memorias_de_un_venezolano_de_la_decadencia_tomo_1_literatura_venezolana.jpg" alt="Portada: Memorias de un venezolano de la decadencia | José Rafael Pocaterra" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="obra">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -137,7 +138,7 @@
                 <div class="container">
                     <img src="img/Rufino_blanco_fombona_la_mascara_heroica_literatura_venezolana.jpg" alt="Portada: La máscara heroica | Rufino Blanco Fombona" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="obra">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -150,7 +151,7 @@
                 <div class="container">
                     <img src="img/jose_antonio_ramos_sucre_la_torre_de_timon_literatura_venezolana.jpg" alt="Portada: La torre de Timón | José Antonio Ramos Sucre" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="obra">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -176,7 +177,7 @@
                 <div class="container">
                     <img src="img/libro-6.jpg" alt="Viaje a las regiones equinocciales del Nuevo Continente III | Alejandro de Humboldt" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="obra">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -200,19 +201,114 @@
         <!--autores-->
         <h1>AUTORES</h1>
         <div class="row autores">
+            <!--RUFINO BLANCO FOMBONA-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/Editorial-EMECE_Rufino-Blanco-Fombona.jpg" alt="Retrato Rufino Blanco Fombona" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><a href="autores/blanco-fombona.html"><button>ABRIR</button></a></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Rufino Blanco Fombona</div>
+                </div>
+            </div>
             <!--BELLO-->
             <div class="basis">
                 <div class="container">
                     <img src="img/Raymond Monvoisin - AndresBello.jpg" alt="Retrato Andrés Bello" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><a href="autores/bello.html"><button>ABRIR</button></a></div>
                     </div>
                 </div>
                 <div class="price">
                     <div class="title">Andr&eacute;s Bello</div>
                 </div>
+            </div>          
+            <!--DE LA PARRA-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/N-A_Teresa_de_la_Parra.jpg" alt="Retrato Teresa de la Parra" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><a href="autores/de-la-parra.html"><button>ABRIR</button></a></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Teresa de la Parra</div>
+                </div>
             </div>
-           
+          <!--HUMBOLDT-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/Stieler,_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg" alt="Retrato Alexander von Humboldt" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><a href="autores/humboldt.html"><button>ABRIR</button></a></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Alejandro de Humboldt</div>
+                </div>
+            </div>
+            <!--POCATERRA-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/Editorial-EMECE_Jose-Rafael-Pocaterra.jpg" alt="Retrato José Rafael Pocaterra" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Jos&eacute; Rafael Pocaterra</div>
+                </div>
+            </div>            
+              <!--DE LAS CASAS-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/N-A_Bartolomedelascasas.jpg" alt="Retrato Bartolomé de las Casas" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Bartolom&eacute; de las Casas</div>
+                </div>
+            </div>
+            <!--RAMOS SUCRE-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/N-A_Jose-Antonio-Ramos-Sucre.jpg" alt="Retrato José Antonio Ramos Sucre" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Jos&eacute; Antonio Ramos Sucre</div>
+                </div>
+            </div>
+            <!--LISANDRO ALVARADO-->
+            <div class="basis">
+                <div class="container">
+                    <img src="img/Cojo-Ilustrado_Lisandro-Alvarado.jpg" alt="Retrato Lisandro Alvarado" class="image sombra">
+                    <div class="overlay">
+                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="title">Lisandro Alvarado</div>
+                </div>
+            </div>
+            
+            <!--MÁS AUTORES-->
+            <div class="basis masobras">
+                <div class="container">
+                    <img src="img/+obras.png" class="image sombra" style="background-color: transparent;">
+                    <div class="overlay">
+                        <div class="text"><label class="button" for="lista-obras">+&nbsp;AUTORES</label></div>
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
         <!--fin de autores-->
         <!--panel de participar-->
@@ -257,26 +353,29 @@
             <div class="modal-body sombra">
                 <!-- <div class="modal-content">Aloha!</div>  -->
                 <div class="ficha-title">
-                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
+                    <h2>Esta página a&uacute;n no est&aacute; programada</h2>
                 </div>
                 <div class="ficha-extract">
-                    <p>Haciendo <a class="morel">clic aqu&iacute;</a> puedes ver un <a class="morel" href="obras/historia-indias.html">ejemplo completo</a> de este tipo de elemento . Tambi&eacute;n <label for="obra"></label><a class="morel" href="prototipo.html#3">puedes acompañarnos</a> de muchas formas<a class="morel"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <p>Haciendo <a class="morel">clic aqu&iacute;</a> puedes ver un <a class="morel" href="obras/historia-indias.html">ejemplo completo</a> de este tipo de elemento. Tambi&eacute;n <label for="obra"></label><a class="morel" href="prototipo-wa.html#3">puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html#5"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
                     <ul>
-                        <li>Compra algo en la tienda</li>
-                        <li>Haz una donaci&oacute;n</li>
-                        <li>Comparte la campa&ntilde;a</li>
-                        <li><label class="morel" for="suscribir">Sucr&iacute;bete</label> al bolet&iacute;n</li>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
                     </ul>
                 </div>
                 <div class="ficha-metadata">
-                    <div class="btn-container"><label class="button" role="button" for="obra">PARTICIPAR</label></div>
-                    <div class="btn-container"><label class="button" role="button" for="obra">EJEMPLO</label></div>
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    <div class="btn-container"><a href="obras/historia-indias.html"><button>EJEMPLO</button></a></div>
                     <div class="btn-container"><label class="button" role="button" for="obra">CERRAR</label>
                     </div>
                 </div>
             </div>
         </div>
-        <!--modal 2-->
+        <!--modal suscripción-->
         <input class="checker" type="checkbox" id="suscribir" hidden>
         <div class="modal">
             <div class="modal-body sombra">
@@ -325,6 +424,91 @@
                 <!--fin del modal-->
             </div>
         </div>
+        <!--modal lista de obras-->
+        <input class="checker" type="checkbox" id="lista-obras" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta página a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                    <p>Tenemos 20 autores y 45 obras ya curados y enlazados en nuestra base de datos, y un listado de más de 300 por procesar en el primer año a partir del lanzamiento de la aplicación. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    
+                    <div class="btn-container"><label class="button" role="button" for="lista-obras">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal autor no programado-->
+        <input class="checker" type="checkbox" id="autor" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                    <p>Haciendo <a class="morel">clic aqu&iacute;</a> puedes ver un <a class="morel" href="autores/bello.html">ejemplo completo</a> de este tipo de elemento . Tambi&eacute;n <label for="obra"></label><a class="morel" href="prototipo-wa.html#3">puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html">para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
+                    <div class="btn-container"><label class="button" role="button" for="autor">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal listas dinámicas-->
+        <input class="checker" type="checkbox" id="listas" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                     <p>En <b class="site-word">literaturavenezolana.info</b>, los listados automáticos por año, por editorial, por autor y por país (entre otros), irán creciendo a partir de la colección inicial, con al menos una nueva obra descargable que se incorporará cada día laborable (en el calendario venezolano) del año. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
+                    <div class="btn-container"><label class="button" role="button" for="listas">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin de modals -->
     </div>
        
 <script src="js/particles.js"></script>

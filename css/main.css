@@ -135,9 +135,12 @@ label:hover.button, button:hover {
 @media screen and (min-width: 376px) and (max-width: 600px) {
   html {
     font-size: 14px; } }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 1226px) {
   html {
     font-size: 16px; } }
+@media screen and (min-width: 1227px) {
+  html {
+    font-size: 18px; } }
 /*general*/
 .main-container {
   max-width: 1227px;
