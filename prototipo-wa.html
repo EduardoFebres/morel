@@ -254,7 +254,7 @@
                 <div class="container">
                     <img src="img/Editorial-EMECE_Jose-Rafael-Pocaterra.jpg" alt="Retrato José Rafael Pocaterra" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="autor">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -266,7 +266,7 @@
                 <div class="container">
                     <img src="img/N-A_Bartolomedelascasas.jpg" alt="Retrato Bartolomé de las Casas" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button"  for="autor">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -278,7 +278,7 @@
                 <div class="container">
                     <img src="img/N-A_Jose-Antonio-Ramos-Sucre.jpg" alt="Retrato José Antonio Ramos Sucre" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="autor">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -290,7 +290,7 @@
                 <div class="container">
                     <img src="img/Cojo-Ilustrado_Lisandro-Alvarado.jpg" alt="Retrato Lisandro Alvarado" class="image sombra">
                     <div class="overlay">
-                        <div class="text"><label class="button" role="button">ABRIR</label></div>
+                        <div class="text"><label class="button" role="button" for="autor">ABRIR</label></div>
                     </div>
                 </div>
                 <div class="price">
@@ -325,9 +325,9 @@
             <div class="participar" style="">
                 
                 <div class="ficha-extract" style="">
-                    <button href="index.html">COMPRAR</button><br>
+                    <a href="index.html"><button>COMPRAR</button></a><br>
                     <p>Hemos producido y seleccionado productos relacionados con nuestro nicho. Con cada compra,  nos dejas un importante aporte para financiar el desarrollo de literaturavenezolana.info</p><br>
-                    <button>DONAR</button><br>
+                    <a href="donar.html"><button>DONAR</button></a><br>
                     <div><p>Cada contribución, por más pequeña que te parezca, nos acerca un poco más a la meta necesaria para cubrir los gastos de desarrollo, agregación y promoción de literaturavenezolana.info</p></div>  <br>
                 </div>
                
@@ -336,7 +336,8 @@
                     
                     
                     <div class="participar-right">
-                        <button class="a2a_dd" href="https://www.addtoany.com/share">COMPARTIR<script async src="https://static.addtoany.com/menu/page.js"></script></button><br>
+
+                        <aclass="a2a_dd morel" href="https://www.addtoany.com/share" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acomp&aacute;&ntilde;alos a terminar la aplicaci&oacute;n"><button>COMPARTIR</button></a><script async src="https://static.addtoany.com/menu/page.js"></script><br>
                         <p>Con cada clic para compartir, nos ayudas al mismo tiempo a completar el desarrollo de esta aplicación y promoverla, para que pronto pueda servirle a muchas personas</p><br>
                         <div>
                             <label class="button" role="button" for="suscribir">SUSCRIBIRTE</label><br>
@@ -360,7 +361,7 @@
                     <ul>
                         <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
                         <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
-                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+                        <li><a class="a2a_dd morel" href="https://www.addtoany.com/share" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acomp&aacute;&ntilde;alos a terminar la aplicaci&oacute;n">Comparte la campaña</a><script async src="https://static.addtoany.com/menu/page.js"></script></li>
 
 
 <script async src="https://static.addtoany.com/menu/page.js"></script>
@@ -371,6 +372,88 @@
                     <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
                     <div class="btn-container"><a href="obras/historia-indias.html"><button>EJEMPLO</button></a></div>
                     <div class="btn-container"><label class="button" role="button" for="obra">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--modal lista de obras-->
+        <input class="checker" type="checkbox" id="lista-obras" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta página a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                    <p>Tenemos 20 autores y 45 obras ya curados y enlazados en nuestra base de datos, y un listado de más de 300 por procesar en el primer año a partir del lanzamiento de la aplicación. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    
+                    <div class="btn-container"><label class="button" role="button" for="lista-obras">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal autor no programado-->
+        <input class="checker" type="checkbox" id="autor" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                    <p>Haciendo <a class="morel">clic aqu&iacute;</a> puedes ver un <a class="morel" href="autores/bello.html">ejemplo completo</a> de este tipo de elemento . Tambi&eacute;n <label for="obra"></label><a class="morel" href="prototipo-wa.html#3">puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html">para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li><a class="a2a_dd morel" href="https://www.addtoany.com/share" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acomp&aacute;&ntilde;alos a terminar la aplicaci&oacute;n">Comparte la campaña</a><script async src="https://static.addtoany.com/menu/page.js"></script></li>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
+                    <div class="btn-container"><label class="button" role="button" for="autor">CERRAR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal listas dinámicas-->
+        <input class="checker" type="checkbox" id="listas" hidden>
+        <div class="modal">
+            <div class="modal-body sombra">
+                <!-- <div class="modal-content">Aloha!</div>  -->
+                <div class="ficha-title">
+                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
+                </div>
+                <div class="ficha-extract">
+                     <p>En <b class="site-word">literaturavenezolana.info</b>, los listados automáticos por año, por editorial, por autor y por país (entre otros), irán creciendo a partir de la colección inicial, con al menos una nueva obra descargable que se incorporará cada día laborable (en el calendario venezolano) del año. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
+                    <ul>
+                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
+                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
+                        <li><a class="a2a_dd morel" href="https://www.addtoany.com/share" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acomp&aacute;&ntilde;alos a terminar la aplicaci&oacute;n">Comparte la campaña</a><script async src="https://static.addtoany.com/menu/page.js"></script></li>
+
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
+                    </ul>
+                </div>
+                <div class="ficha-metadata">
+                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
+                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
+                    <div class="btn-container"><label class="button" role="button" for="listas">CERRAR</label>
                     </div>
                 </div>
             </div>
@@ -421,94 +504,11 @@
                     </form>
                     <!--fin del form-->
                 </div>
-                <!--fin del modal-->
             </div>
         </div>
-        <!--modal lista de obras-->
-        <input class="checker" type="checkbox" id="lista-obras" hidden>
-        <div class="modal">
-            <div class="modal-body sombra">
-                <!-- <div class="modal-content">Aloha!</div>  -->
-                <div class="ficha-title">
-                    <h2>Esta página a&uacute;n no est&aacute; programada</h2>
-                </div>
-                <div class="ficha-extract">
-                    <p>Tenemos 20 autores y 45 obras ya curados y enlazados en nuestra base de datos, y un listado de más de 300 por procesar en el primer año a partir del lanzamiento de la aplicación. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
-                    <ul>
-                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
-                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
-                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
-
-
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
-                    </ul>
-                </div>
-                <div class="ficha-metadata">
-                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
-                    
-                    <div class="btn-container"><label class="button" role="button" for="lista-obras">CERRAR</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--modal autor no programado-->
-        <input class="checker" type="checkbox" id="autor" hidden>
-        <div class="modal">
-            <div class="modal-body sombra">
-                <!-- <div class="modal-content">Aloha!</div>  -->
-                <div class="ficha-title">
-                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
-                </div>
-                <div class="ficha-extract">
-                    <p>Haciendo <a class="morel">clic aqu&iacute;</a> puedes ver un <a class="morel" href="autores/bello.html">ejemplo completo</a> de este tipo de elemento . Tambi&eacute;n <label for="obra"></label><a class="morel" href="prototipo-wa.html#3">puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html">para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
-                    <ul>
-                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
-                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
-                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
-
-
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
-                    </ul>
-                </div>
-                <div class="ficha-metadata">
-                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
-                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
-                    <div class="btn-container"><label class="button" role="button" for="autor">CERRAR</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--modal listas dinámicas-->
-        <input class="checker" type="checkbox" id="listas" hidden>
-        <div class="modal">
-            <div class="modal-body sombra">
-                <!-- <div class="modal-content">Aloha!</div>  -->
-                <div class="ficha-title">
-                    <h2>Esta secci&oacute;n a&uacute;n no est&aacute; programada</h2>
-                </div>
-                <div class="ficha-extract">
-                     <p>En <b class="site-word">literaturavenezolana.info</b>, los listados automáticos por año, por editorial, por autor y por país (entre otros), irán creciendo a partir de la colección inicial, con al menos una nueva obra descargable que se incorporará cada día laborable (en el calendario venezolano) del año. <a class="morel" href="prototipo-wa.html#3">Puedes acompañarnos</a> de muchas formas<a class="morel" href="post.html"> para terminar</a> de poner literaturavenezolana.info a disposici&oacute;n del p&uacute;blico</p>
-                    <ul>
-                        <a class="morel" href="index.html"><li>Compra algo en la tienda</li></a>
-                        <li><a class="morel" href="donacion.html">Haz una donaci&oacute;n</a></li>
-                        <li class="a2a" data-a2a-url="http://literaturavenezolana.info" data-a2a-title="Conoce el proyecto MOREL | literaturavenezolana.info y acompáñalos a terminar la aplicación"><a class="morel a2a_dd" href="https://www.addtoany.com/share">Comparte la campaña</a></li>
-
-
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <label class="morel" for="suscribir"><li>Sucr&iacute;bete al bolet&iacute;n</li></label>
-                    </ul>
-                </div>
-                <div class="ficha-metadata">
-                    <div class="btn-container"><a href="prototipo-wa.html#3"><button>PARTICIPAR</button></a></div>
-                    <div class="btn-container"><a href="autores/bello.html"><button>EJEMPLO</button></a></div>
-                    <div class="btn-container"><label class="button" role="button" for="listas">CERRAR</label>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--fin del modal-->
         <!-- fin de modals -->
+
     </div>
        
 <script src="js/particles.js"></script>

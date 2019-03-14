@@ -88,6 +88,16 @@ h3 {
   line-height: 2rem;
   margin-top: 1.5rem; }
 
+/*hash link workaround*/
+h3::before {
+  display: block;
+  content: " ";
+  margin-top: -3em;
+  height: 3em;
+  visibility: hidden;
+  pointer-events: none; }
+
+/*end of hlw*/
 p {
   font-size: 1.2rem;
   font-weight: 300;
