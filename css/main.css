@@ -89,7 +89,7 @@ h3 {
   margin-top: 1.5rem; }
 
 /*hash link workaround*/
-h3::before {
+h3::before, h2::before {
   display: block;
   content: " ";
   margin-top: -3em;
@@ -532,6 +532,9 @@ label.input {
   align-self: center;
   padding: 1rem 0px; }
 
+.footer {
+  font-weight: 400; }
+
 @media screen and (min-width: 799px) {
   .footer-col {
     flex-basis: 33.33%; }
@@ -716,10 +719,27 @@ label:hover.button, button:hover {
   .container:active .overlay {
     bottom: 0;
     height: 100%; } }
+/*xs styling*/
+@media screen and (max-width: 375px) {
+  .price .title {
+    font-size: 1.7rem;
+    line-height: 1.7rem; }
+
+  .price .autor {
+    font-size: 1.7rem;
+    line-height: 1.7rem; } }
 /*s styling*/
 @media screen and (min-width: 376px) and (max-width: 599px) {
   .basis {
-    flex-basis: calc(50% - 2rem); } }
+    flex-basis: calc(50% - 2rem); }
+
+  .price .title {
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+
+  .price .autor {
+    font-size: 1.5rem;
+    line-height: 1.5rem; } }
 /*ml & m styling*/
 @media screen and (min-width: 600px) and (max-width: 1039px) {
   .basis {
