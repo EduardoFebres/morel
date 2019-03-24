@@ -35,11 +35,20 @@ table {
   --background: #F9F9F9;
   --fondo: #ebebeb; }
 
+/*otros colores
+#f2ecff
+#ccc
+#faf8ff
+#faf8ff
+#8d8d8d
+*/
 html {
   font-size: 12px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none;
+  color: var(--color-1); }
 
 a.morel, footer a {
   color: var(--color-1);
@@ -100,7 +109,7 @@ h3 {
   margin-top: 1.5rem; }
 
 /*hash link workaround*/
-h3::before, h2::before {
+h3::before, h2::before, h1::before {
   display: block;
   content: " ";
   margin-top: -3em;
@@ -225,7 +234,9 @@ label:hover.button, button:hover {
 
 .ciudad {
   background-color: var(--background);
-  margin-bottom: 3.125rem; }
+  margin-bottom: 3.125rem;
+  max-width: 1227px;
+  margin: auto; }
 
 .ciudad h2 {
   margin-bottom: 2.250rem; }
@@ -338,6 +349,9 @@ label:hover.button, button:hover {
   padding: 0px;
   margin: 0 auto; }
 
+.tienda .logo {
+  background-image: url("../img/morel-tienda.svg"); }
+
 .header {
   display: flex;
   justify-content: center;
@@ -380,7 +394,8 @@ label:hover.button, button:hover {
     height: 197px; } }
 /*header*/
 .logo-container {
-  max-width: 50%; }
+  max-width: 50%;
+  margin-top: 2rem; }
 
 /*xs styling*/
 /*Desde s hasta xl*/
@@ -449,7 +464,7 @@ nav div a:hover {
 nav li {
   display: inline-block;
   flex: 1 1 100%;
-  text-align: center;
+  text-align: left;
   font-weight: 600; }
 
 nav .menu-item {
@@ -475,7 +490,6 @@ nav .wrapper {
     color: var(--background); }
 
   nav ul {
-    background-color: var(--color-2);
     display: block;
     height: 0;
     list-style-type: none;
@@ -486,15 +500,16 @@ nav .wrapper {
     visibility: hidden; }
 
   nav li {
-    border-bottom: 2px solid var(--color-1);
+    border: 0px 2px 2px 2px solid var(--color-1);
     color: var(--color-1);
     display: block;
     font-size: 1.5em;
-    padding: 1em 0; }
+    padding: 1em 1em;
+    background-color: var(--color-2); }
 
   nav #menu-toggle:checked ~ ul {
     opacity: 1;
-    height: 100vh;
+    height: .0001rem;
     visibility: visible; }
 
   nav .label-toggle {
@@ -780,7 +795,18 @@ margin:.688rem -1rem 5rem -1rem
 /*for touch devices*/
 @media (hover: none) {
   .price {
-    display: block; }
+    display: block;
+    line-height: 1rem;
+    font-size: 1.05rem;
+    /*background-color: rgba(249,249,249,0.6);*/
+    margin: 3%; }
+
+  .price .title {
+    font-weight: 600;
+    margin-top: 1.7rem; }
+
+  .price .autor {
+    margin-top: 0.7rem; }
 
   .container:active .overlay {
     bottom: 0;
