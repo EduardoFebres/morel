@@ -32,7 +32,8 @@ table {
   --color-1: #2a3425;
   --color-2: #d4695c;
   --color-3: #86a27b;
-  --background: #F9F9F9 ; }
+  --background: #F9F9F9;
+  --fondo: #ebebeb; }
 
 html {
   font-size: 12px; }
@@ -40,19 +41,27 @@ html {
 a {
   text-decoration: none; }
 
-a.morel {
+a.morel, footer a {
   color: var(--color-1);
   font-weight: 500;
   transition: all 1s ease; }
 
-a.metadata-input {
+a.metadata-input, footer a {
   color: var(--color-1);
   transition: all 1s ease;
   text-decoration: none; }
 
-a.morel:hover, a.metadata-input:hover {
+a.morel:hover, a.metadata-input:hover, footer a:hover {
   color: var(--color-2);
   cursor: pointer; }
+
+footer {
+  background-color: var(--background);
+  min-width: 100%; }
+
+/*box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.16), 0 -2px 10px 0 rgba(0, 0, 0, 0.12);padding-bottom: 0px*/
+footer .main-container {
+  background-color: var(--background); }
 
 footer a.morel {
   font-weight: 300; }
@@ -67,15 +76,17 @@ body {
 h1 {
   font-size: 1.688rem;
   font-weight: 500;
-  border-left: 0px;
+  /*border-left: 0px;
   border-top: 0px;
   border-right: 0.185em;
   border-bottom: 0.185em;
   border-style: solid;
   display: inline;
   padding: 0px 0.750rem;
-  letter-spacing: -0.063rem;
-  text-transform: uppercase; }
+  letter-spacing: -0.063rem;*/
+  text-transform: uppercase;
+  margin: 3.5rem 0px 1rem;
+  text-align: center; }
 
 h2 {
   font-size: 2rem;
@@ -153,9 +164,9 @@ label:hover.button, button:hover {
     font-size: 18px; } }
 /*general*/
 .main-container {
-  max-width: 1227px;
   margin: auto;
-  padding: 1%; }
+  padding: 1%;
+  background-color: #ebebeb; }
 
 .column {
   flex-grow: 0;
@@ -197,11 +208,15 @@ label:hover.button, button:hover {
   line-height: 0; }
 
 .row {
+  max-width: calc(1227px + 2rem);
+  margin: auto;
+  margin-top: .688rem;
+  margin-bottom: 9.125rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 0.688rem -1rem 3.125rem -1rem; }
+  /*margin:.688rem -1rem 3.125rem -1rem*/ }
 
 /*ciudades*/
 .ciudad .ficha-title {
@@ -233,12 +248,14 @@ label:hover.button, button:hover {
   padding-left: 15.1%; }
 
 .obra-dia {
+  max-width: 1227px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-bottom: 50px;
-  margin-top: 27px;
+  margin-bottom: 9.125rem;
+  margin-top: 2rem;
   background-color: var(--background); }
 
 /*obras media queries*/
@@ -324,8 +341,12 @@ label:hover.button, button:hover {
 .header {
   display: flex;
   justify-content: center;
-  height: 75vh;
-  align-items: center; }
+  height: 65vh;
+  align-items: center;
+  text-align: center; }
+
+.logo-container input, .logo-container a {
+  display: none; }
 
 /*s*/
 @media only screen and (min-width: 376px) and (max-width: 599px) {
@@ -365,12 +386,15 @@ label:hover.button, button:hover {
 /*Desde s hasta xl*/
 @media screen and (min-width: 600px) {
   .header {
-    height: 90vh !important; } }
+    height: 70vh !important; }
+
+  .logo-container input, .logo-container a {
+    display: inline; } }
 .navBar {
   background-color: var(--background);
   position: fixed;
   min-width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   z-index: 100; }
 
 nav .logo {
@@ -485,7 +509,7 @@ nav .wrapper {
   nav .wrapper {
     display: block; } }
 /*miscelaneas*/
-.sombra {
+.sombra-solida {
   box-shadow: 2px 2px 5px 0px; }
 
 .responsive {
@@ -529,6 +553,16 @@ input[type=submit]:hover {
 
 label.input {
   font-size: 1.4rem; }
+
+input[type=search] {
+  border: .125em solid #ccc;
+  font-size: 1.4rem;
+  transition: all 1s ease;
+  width: 100%;
+  max-width: 400px; }
+
+input[type=search]:focus {
+  border: 0.125em solid var(--color-2); }
 
 /*footer*/
 .footer-row {
@@ -652,13 +686,13 @@ label:hover.button, button:hover {
   .autor-pagina .responsive {
     width: 100%; } }
 /*obras*/
-.row {
+/*.row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  margin: 0.688rem -1rem 5rem -1rem; }
-
+flex-direction: row;
+flex-wrap:wrap;
+align-items: stretch;
+margin:.688rem -1rem 5rem -1rem
+}*/
 .container {
   position: relative; }
 
@@ -673,15 +707,27 @@ label:hover.button, button:hover {
   padding: 5px;
   background-color: var(--background); }
 
+/*
 .overlay {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgba(249, 249, 249, 0.6);
+  background-color: rgba(249,249,249,0.6);
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height:0;
+  transition: .5s ease;
+}*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: rgba(249, 249, 249, 0.6);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
   transition: .5s ease; }
 
 .text {
@@ -704,7 +750,7 @@ label:hover.button, button:hover {
     display: none;
     line-height: 1rem;
     font-size: 1.05rem;
-    background-color: rgba(249, 249, 249, 0.6);
+    /*background-color: rgba(249,249,249,0.6);*/
     margin: 3%; }
 
   .price .title {
@@ -717,9 +763,17 @@ label:hover.button, button:hover {
   .container:hover ~ .price {
     display: block; }
 
+  /*
+      .container:hover .overlay, .masobras .overlay {
+      bottom: 0;
+      height: 100%;
+    } */
   .container:hover .overlay, .masobras .overlay {
-    bottom: 0;
-    height: 100%; }
+    right: 0;
+    width: 100%; }
+
+  .masobras .overlay {
+    background-color: var(--background); }
 
   .container:hover {
     cursor: pointer; } }
@@ -776,7 +830,11 @@ label:hover.button, button:hover {
 
 .post-container {
   max-width: 100%;
-  padding: 1% 0% 0% 0%; }
+  padding: 1% 0% 0% 0%;
+  background: none; }
+
+.post-container .obra-dia {
+  max-width: 100%; }
 
 .post-container .obra-dia {
   background-color: transparent;
@@ -851,7 +909,7 @@ label:hover.button, button:hover {
 #particles-js {
   width: 100%;
   height: 100%;
-  background-color: var(--background);
+  background-color: #f9f9f9;
   background-image: url("");
   background-size: cover;
   background-position: 50% 50%;
